@@ -26,3 +26,24 @@ body {
 ```js
 postcss([ require('postcss-v-important') ])
 ```
+
+Outputs...
+
+```css
+body {
+    color: red;
+}
+
+body {
+    color: green !important;
+}
+
+:root body {
+    color: blue !important;
+}
+
+:root:root:root:root:root:root:root:root:root:root:root:root:root body {
+    color: blue !important;
+}
+
+```

@@ -24,11 +24,12 @@ module.exports = postcss.plugin('postcss-v-important', function (opts) {
                     var newDeclaration = postcss.decl({prop: decl.prop, value: matches[1] + '!important'});
 
                     decl.remove();
+                    newRule.append(newDeclaration);
+                    ruleParent.insertAfter(rule, newRule);
+
                     if (rule.nodes.length === 0) {
                         rule.remove();
                     }
-                    newRule.append(newDeclaration);
-                    ruleParent.append(newRule);
                 }
 
             });
