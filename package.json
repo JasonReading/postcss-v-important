@@ -1,0 +1,35 @@
+{
+  "name": "postcss-v-important",
+  "version": "1.0.0",
+  "description": "PostCSS plugin for very important css",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "important"
+  ],
+  "author": "Jason Reading <Jason.Reading@gmail.com>",
+  "license": "MIT",
+  "repository": "JasonReading/postcss-v-important",
+  "bugs": {
+    "url": "https://github.com/JasonReading/postcss-v-important/issues"
+  },
+  "homepage": "https://github.com/JasonReading/postcss-v-important",
+  "dependencies": {
+    "postcss": "^5.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^18.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
