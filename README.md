@@ -34,16 +34,15 @@ body {
     color: red;
 }
 
-body {
-    color: green !important;
-}
-
 :root body {
     color: blue !important;
 }
-
 :root:root:root:root:root:root:root:root:root:root:root:root:root body {
-    color: blue !important;
+    color: orange !important;
+}
+
+body {
+    color: green !important;
 }
 
 ```
